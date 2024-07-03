@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Posts Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="src/asset/style.css">
 </head>
 <body>
 
 <div class="header">
     <div class="header-left">
-        <div class="logo">La Firme</div>
+        <div class="logo">
+            <img src="src/images/logo-01TN-Blanc.png" alt="Logo">
+        </div>
         <div class="nav">
             <a href="#">Postes</a>
             <a href="#">CVthèques</a>
@@ -29,125 +31,184 @@
 
 <div class="container">
     <div class="sidebar">
-        <h1>Filtrer</h1>
         <div class="filters">
             <div class="filter-item">
                 <label class="filter-label" for="mot-cle">Mot clé</label>
                 <input class="filter-input" type="text" id="mot-cle" placeholder="Rechercher par mot-clé">
             </div>
             <div class="filter-item">
-                <label class="filter-label" for="statut">Statut</label>
+                <label class="filter-label">Statut</label>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="statut-1" value="Poste diffusé">
-                    <label for="statut-1">Poste diffusé (104)</label>
+                    <label for="statut-1">Poste diffusé</label>
+                    <p>104</p>
                 </div>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="statut-2" value="Poste non diffusé">
-                    <label for="statut-2">Poste non diffusé (2)</label>
+                    <label for="statut-2">Poste non diffusé</label>
+                    <p>2</p>
                 </div>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="statut-3" value="Vivier">
-                    <label for="statut-3">Vivier (2)</label>
+                    <label for="statut-3">Vivier</label>
+                    <p>2</p>
                 </div>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="statut-4" value="Candidature spontanée">
-                    <label for="statut-4">Candidature spontanée (2)</label>
+                    <label for="statut-4">Candidature spontanée</label>
+                    <p>2</p>
                 </div>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="statut-5" value="Archivé">
-                    <label for="statut-5">Archivé (0)</label>
+                    <label for="statut-5">Archivé</label>
+                    <p>0</p>
                 </div>
             </div>
             <div class="filter-item">
-                <label class="filter-label" for="localite">Localité</label>
+                <label class="filter-label">Localité</label>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="localite-1" value="Rennes">
-                    <label for="localite-1">Rennes (104)</label>
+                    <label for="localite-1">Rennes</label>
+                    <p>104</p>
                 </div>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="localite-2" value="Brest">
-                    <label for="localite-2">Brest (2)</label>
+                    <label for="localite-2">Brest</label>
+                    <p>2</p>
                 </div>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="localite-3" value="Paris">
-                    <label for="localite-3">Paris (2)</label>
+                    <label for="localite-3">Paris</label>
+                    <p>2</p>
                 </div>
             </div>
             <div class="filter-item">
-                <label class="filter-label" for="societe">Société</label>
+                <label class="filter-label">Société</label>
                 <div class="filter-checkbox">
                     <input type="checkbox" id="societe-1" value="Hellowork">
-                    <label for="societe-1">Hellowork (104)</label>
+                    <label for="societe-1">Hellowork</label>
+                    <p>104</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="main">
         <h2>8 postes</h2>
-        <div class="job-listing">
-            <div class="job-meta">
-                <div class="job-meta-item">
-                    <h3 class="job-title">Commercial B to B - Nantes - La Firme - CDI [RCP/P]</h3>
-                    <div class="job-company">La Firme</div>
+        <div class="card-body">
+            <div class="student-card">
+                <div class="student-meta">
+                    <div class="student-meta-item">
+                        <h3 class="student-title">Maëva Boissel</h3>
+                        <div class="student-logo">
+                            <img alt="Profile Picture"
+                                 src="http://z01cv.local/wp-content/uploads/2024/05/woman-face-expression-clipart-de.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="job-meta-item">
-                    <div class="badge">AN</div>
-                    <div class="badge">SC</div>
-                    <div class="badge">CV</div>
+                <div class="inline-badge">
+                    <div class="badge">Javascript</div>
+                    <div class="badge">Golang</div>
+                </div>
+                <div class="student-details">
+                    <p class="detail-status">⚙️ Back-end </p>
+                    <p class="detail-status">📍 Étranger</p>
+                </div>
+                <div class="student-stats">
+                    <div class="stat">Prêt à travailler :<p><strong>1mois</strong></p></div>
+                    <div class="stat">Mode de travail :<p><strong>Distanciel</strong></p></div>
+                </div>
+                <div class="student-actions">
+                    <a href="#" class="action">📩 Contact me</a>
                 </div>
             </div>
-            <div class="job-details">
-                <div class="job-status">Diffusé</div>
-                <div class="job-status">3/5 ans d'exp.</div>
-                <div class="job-status">Service technique</div>
+            <div class="student-card">
+                <div class="student-meta">
+                    <div class="student-meta-item">
+                        <h3 class="student-title">Clément Bouchet</h3>
+                        <div class="student-logo">
+                            <img alt="Profile Picture"
+                                 src="http://z01cv.local/wp-content/uploads/2024/05/pngtree-man-avatar-wearing-gray-suit-png-image_6102786.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-badge">
+                    <p class="badge">Javascript</p>
+                </div>
+                <div class="student-details">
+                    <p class="detail-status">⚙️ Fullstack, Back-end </p>
+                    <p class="detail-status">📍 30km</p>
+                </div>
+                <div class="student-stats">
+                    <div class="stat">Prêt à travailler :<p><strong>Préavis</strong></p></div>
+                    <div class="stat">Mode de travail :<p><strong>Présentiel, hybride</strong></p></div>
+                </div>
+                <div class="student-actions">
+                    <a href="#" class="action">📩 Contact me</a>
+                    <p class="email">7eq9wfygcf@rfcdrive.com</p>
+                </div>
+                <div class="additional-links">
+                    <a href="#" class="action"><span>Git</span> 🌐</a>
+                    <a href="#" class="action"><span>Vidéo</span> 🎥</a>
+                    <a href="#" class="action"><span>Portfolio</span> 📂</a>
+                    <a href="#" class="action"><span>Voir CV</span> 📄</a>
+                </div>
             </div>
-            <div class="job-actions">
-                <a href="#" class="job-action">Arrêter la diffusion</a>
-                <a href="#" class="job-action">En ligne 2</a>
-                <a href="#" class="job-action">Plus de détails</a>
+            <div class="student-card">
+                <div class="student-meta">
+                    <div class="student-meta-item">
+                        <h3 class="student-title">Melvyn Saint-Vil</h3>
+                        <div class="student-logo">
+                            <img alt="Profile Picture"
+                                 src="http://z01cv.local/wp-content/uploads/2024/05/pngtree-man-avatar-wearing-gray-suit-png-image_6102786.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-badge">
+                    <div class="badge">PHP</div>
+                </div>
+                <div class="student-details">
+                    <p class="detail-status">⚙️ Réseaux </p>
+                    <p class="detail-status">📍 France</p>
+                </div>
+                <div class="student-stats">
+                    <div class="stat">Prêt à travailler :<p><strong>Immédiate</strong></p></div>
+                    <div class="stat">Mode de travail :<p><strong>Distanciel</strong></p></div>
+                </div>
+                <div class="student-actions">
+                    <a href="#" class="action">📩 Contact me</a>
+                </div>
             </div>
-            <div class="job-stats">
-                <div class="job-stat">5 Nouveau</div>
-                <div class="job-stat">En attente</div>
-                <div class="job-stat">Sélectionné</div>
-                <div class="job-stat">Entretien tél.</div>
-                <div class="job-stat">2 Rdv physique</div>
-                <div class="job-stat">Shortlist</div>
-                <div class="job-stat">Proposition</div>
-                <div class="job-stat">27 Au total</div>
-                <div class="job-stat">138 en CVthèque</div>
+            <div class="student-card">
+                <div class="student-meta">
+                    <div class="student-meta-item">
+                        <h3 class="student-title">Mickael Jackson</h3>
+                        <div class="student-logo">
+                            <img alt="Profile Picture"
+                                 src="http://z01cv.local/wp-content/uploads/2024/05/pngtree-man-avatar-wearing-gray-suit-png-image_6102786.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-badge">
+                    <p class="badge">Rust</p>
+                </div>
+                <div class="student-details">
+                    <p class="detail-status">⚙️ Fullstack, Back-end, Réseaux</p>
+                    <p class="detail-status">📍 France</p>
+                </div>
+                <div class="student-stats">
+                    <div class="stat">Prêt à travailler :<p><strong>1 mois</strong></p></div>
+                    <div class="stat">Mode de travail :<p><strong>Hybride</strong></p></div>
+                </div>
+                <div class="student-actions">
+                    <a href="#" class="action">📩 Contact me</a>
+                </div>
+                <div class="additional-links">
+                    <a href="#" class="action"><span>Vidéo</span> 🎥</a>
+                    <a href="#" class="action"><span>Voir CV</span> 📄</a>
+                </div>
             </div>
         </div>
-        <div class="job-listing">
-            <div class="job-meta">
-                <div class="job-meta-item">
-                    <h3 class="job-title">Développeur front end junior H/F - Rennes - La</h3>
-                    <div class="job-company">Firme</div>
-                </div>
-                <div class="job-meta-item">
-                    <div class="badge">SC</div>
-                    <div class="badge">CV</div>
-                </div>
-            </div>
-            <div class="job-details">
-                <div class="job-status">Non diffusé</div>
-            </div>
-            <div class="job-actions">
-                <a href="#" class="job-action">Diffuser maintenant</a>
-            </div>
-            <div class="job-stats">
-                <div class="job-stat">12 Nouveau</div>
-                <div class="job-stat">En attente</div>
-                <div class="job-stat">6 Sélectionné</div>
-                <div class="job-stat">Entretien tél.</div>
-                <div class="job-stat">Rdv physique</div>
-                <div class="job-stat">Shortlist</div>
-                <div class="job-stat">Proposition</div>
-                <div class="job-stat">30 Au total</div>
-                <div class="job-stat">4 354 en CVthèque</div>
-            </div>
-        </div>
-        <div class="profile-stats">
+        <!--<div class="profile-stats">
             <div class="profile-stat">
                 <div class="profile-stat-label">CVthèque HelloWork</div>
                 <div class="profile-stat-value">138 profils trouvés</div>
@@ -155,7 +216,7 @@
             <div class="profile-stat">
                 <a href="#" class="btn">Voir les profils</a>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>
 
